@@ -30,7 +30,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
     double m = slope(x0,y0,x1,y1);
     if(x0 < x1){
       //octI
-      if(m > 0 && m < 1){
+      if(m >= 0 && m <= 1){
         oct_one(x0,y0,x1,y1,s,c);
       }
       //octII
@@ -38,7 +38,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
         oct_two(x0,y0,x1,y1,s,c);
       }
       //octIII
-      else if(m < 0 && m > -1){
+      else if(m < 0 && m >= -1){
         oct_eight(x0,y0,x1,y1,s,c);
       }
       //octIV
@@ -48,7 +48,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
     }
     else{
       //octV
-      if(m > 0 && m < 1){
+      if(m >= 0 && m <= 1){
         oct_one(x1,y1,x0,y0,s,c);
       }
       //octVI
@@ -56,7 +56,7 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
         oct_two(x1,y1,x0,y0,s,c);
       }
       //octIV
-      else if(m < 0 && m > -1){
+      else if(m < 0 && m >= -1){
         oct_eight(x1,y1,x0,y0,s,c);
       }
       //octIII
