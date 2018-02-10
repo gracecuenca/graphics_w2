@@ -20,55 +20,42 @@ int main() {
   //draw_line(50,400,450,400,s,c);
   //draw_line(50,200,450,200,s,c);
 
-  //draw_line(0,0,0,500,s,c);
-  draw_line(0,0,50,500,s,c);
-  draw_line(0,0,100,500,s,c);
-  draw_line(0,0,150,500,s,c);
-  draw_line(0,0,200,500,s,c);
-  draw_line(0,0,250,500,s,c);
-  draw_line(0,0,300,500,s,c);
-  draw_line(0,0,350,500,s,c);
-  draw_line(0,0,400,500,s,c);
-  draw_line(0,0,450,500,s,c);
-  draw_line(0,0,500,500,s,c);
+  int change = 50;
+  int count = 0;
 
-  //draw_line(0,500,0,0,s,c);
-  draw_line(0,500,50,0,s,c);
-  draw_line(0,500,100,0,s,c);
-  draw_line(0,500,150,0,s,c);
-  draw_line(0,500,200,0,s,c);
-  draw_line(0,500,250,0,s,c);
-  draw_line(0,500,300,0,s,c);
-  draw_line(0,500,350,0,s,c);
-  draw_line(0,500,400,0,s,c);
-  draw_line(0,500,450,0,s,c);
-  draw_line(0,500,500,0,s,c);
+  //first shootout
+  while(count < 10){
+    draw_line(0,0,change,500,s,c);
+    change+=50;
+    count++;
+  }
 
-  //draw_line(0,500,0,0,s,c);
-  draw_line(500,500,450,0,s,c);
-  draw_line(0,500,0,0,s,c);
-  draw_line(0,500,400,0,s,c);
-  draw_line(0,500,200,0,s,c);
-  draw_line(0,500,250,0,s,c);
-  draw_line(0,500,300,0,s,c);
-  draw_line(0,500,350,0,s,c);
-  draw_line(0,500,400,0,s,c);
-  draw_line(0,500,450,0,s,c);
-  draw_line(0,500,500,0,s,c);
+  count = 0;
+  change = 50;
 
-  //draw_line(0,500,0,0,s,c);
-  draw_line(0,500,50,0,s,c);
-  draw_line(0,500,100,0,s,c);
-  draw_line(0,500,150,0,s,c);
-  draw_line(0,500,200,0,s,c);
-  draw_line(0,500,250,0,s,c);
-  draw_line(0,500,300,0,s,c);
-  draw_line(0,500,350,0,s,c);
-  draw_line(0,500,400,0,s,c);
-  draw_line(0,500,450,0,s,c);
-  draw_line(0,500,500,0,s,c);
+  while(count < 10){
+    draw_line(0,500,change,0,s,c);
+    change+=50;
+    count++;
+  }
 
-  draw_line(0,0,500,0,s,c);
+  count = 0;
+  change = 50;
+
+  while(count < 10){
+    draw_line(500,500,change,0,s,c);
+    change+=50;
+    count++;
+  }
+
+  count = 0;
+  change = 50;
+
+  while(count < 10){
+    draw_line(500,0,change,500,s,c);
+    change+=50;
+    count++;
+  }
 
   display(s);
   save_extension(s, "lines.png");
