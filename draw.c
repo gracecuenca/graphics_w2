@@ -37,11 +37,11 @@ void draw_line(int x0, int y0, int x1, int y1, screen s, color c){
       else if(m > 1){
         oct_two(x0,y0,x1,y1,s,c);
       }
-      //octIII
+      //octVIII
       else if(m < 0 && m >= -1){
         oct_eight(x0,y0,x1,y1,s,c);
       }
-      //octIV
+      //octVII
       else {
         oct_seven(x0,y0,x1,y1,s,c);
       }
