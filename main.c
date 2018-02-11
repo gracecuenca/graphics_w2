@@ -16,7 +16,7 @@ int main() {
   c.blue = MAX_COLOR;
 
   clear_screen(s);
-
+  /***
   //rectangle
   draw_line(50,400,450,400,s,c);
   draw_line(450,400,450,200,s,c);
@@ -71,7 +71,6 @@ int main() {
   draw_line(155,230,165,230,s,c);
 
   //standing dude
-
   //head
   draw_line(300,370,320,370,s,c);
   draw_line(320,370,320,350,s,c);
@@ -86,16 +85,33 @@ int main() {
   draw_line(295,295,295,325,s,c);
   draw_line(295,325,298,325,s,c);
   draw_line(298,325,298,260,s,c);
+  draw_line(298,260,308,260,s,c);
+  draw_line(308,260,308,300,s,c);
 
   draw_line(335,345,335,295,s,c);
   draw_line(335,295,325,295,s,c);
   draw_line(325,295,325,325,s,c);
   draw_line(325,325,322,325,s,c);
   draw_line(322,325,322,260,s,c);
+  draw_line(322,260,314,260,s,c);
+  draw_line(314,260,314,300,s,c);
 
+  draw_line(308,300,314,300,s,c);
+
+  //suitcase
+
+  //table
+  draw_line(340,280,380,280,s,c);
+  draw_line(355,280,355,240,s,c);
+
+  //sitting dude
+
+  //chair
+
+  ***/
 
   //COBWEBS
-  /***
+
   int change = 50;
   int count = 0;
 
@@ -131,7 +147,10 @@ int main() {
     change+=50;
     count++;
   }
-  ***/
+
+  draw_line(0,250,500,250,s,c);
+  draw_line(250,500,250,0,s,c);
+
 
   display(s);
   save_extension(s, "lines.png");
