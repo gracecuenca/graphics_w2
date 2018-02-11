@@ -71,10 +71,28 @@ int main() {
   draw_line(155,230,165,230,s,c);
 
   //standing dude
+
+  //head
   draw_line(300,370,320,370,s,c);
   draw_line(320,370,320,350,s,c);
   draw_line(320,350,300,350,s,c);
   draw_line(300,350,300,370,s,c);
+
+  //body
+  draw_line(285,345,335,345,s,c);
+
+  draw_line(285,345,285,295,s,c);
+  draw_line(285,295,295,295,s,c);
+  draw_line(295,295,295,325,s,c);
+  draw_line(295,325,298,325,s,c);
+  draw_line(298,325,298,260,s,c);
+
+  draw_line(335,345,335,295,s,c);
+  draw_line(335,295,325,295,s,c);
+  draw_line(325,295,325,325,s,c);
+  draw_line(325,325,322,325,s,c);
+  draw_line(322,325,322,260,s,c);
+
 
   //COBWEBS
   /***
