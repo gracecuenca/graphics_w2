@@ -151,6 +151,9 @@ int main() {
   draw_line(0,250,500,250,s,c);
   draw_line(250,500,250,0,s,c);
 
+  draw_line(0,500,500,0,s,c);
+  draw_line(0,0,500,500,s,c);
+
 
   display(s);
   save_extension(s, "lines.png");
